@@ -10,14 +10,21 @@
 Reclaim your X (Twitter) feed — Mass unfollow users with a click of a button.
 
 ## Features
-- Bulk unfollow options: Unfollow all accounts or selectively unfollow those who don't follow you back.
-- Demo mode: Preview the unfollow process without making any changes to your account.
-- Whitelist functionality: Protect specific accounts from being unfollowed by adding them to a whitelist.
-- Session control: Configurable option to stop the unfollow process after `n` minutes.
+- **Smart Auto-Resume**: Automatically resumes the unfollow process after page reload to bypass rate limits.
+- **Visual Logger**: Real-time console overlay showing current status, unfollowed users, and statistics.
+- **Bulk unfollow options**: Unfollow all accounts or selectively unfollow those who don't follow you back.
+- **Demo mode**: Preview the unfollow process without making any changes to your account.
+- **Whitelist functionality**: Protect specific accounts from being unfollowed by adding them to a whitelist.
+- **Session control**: Configurable option to stop the unfollow process after `n` minutes.
 
 ## Usage
 
-- [Install the extension from Chrome Web Store](https://chrome.google.com/webstore/detail/twitter-mass-unfollow/bidolfkgmbnlnijabkjafdajjpocfhol)
+- **Download and Install**:
+  1. Go to the [Releases](https://github.com/FRAOTIAC/twitter-mass-unfollow/releases) page.
+  2. Download the latest `chrome-extension.zip` file and unzip it.
+  3. Open Chrome and navigate to `chrome://extensions/`.
+  4. Enable **Developer mode** (top right corner).
+  5. Click **Load unpacked** and select the unzipped folder.
   - TIP: Pin the extension for easy access
 - Visit your [X/Twitter following page](https://x.com/following)
 - Click the **DEMO** button to see the extension in action without unfollowing anyone or
@@ -25,8 +32,9 @@ Reclaim your X (Twitter) feed — Mass unfollow users with a click of a button.
 - Use **STOP** to abort the whole process
 
 ```
-Once started, keep the page opened while the extension do its thing.
-You can continue to using Twitter in a new tab/window
+Once started, a black console window will appear at the bottom right.
+The extension will automatically pause, reload the page, and resume to avoid Twitter rate limits.
+You can leave the tab open and let it run in the background.
 ```
 
 ## Options
@@ -41,11 +49,11 @@ Keep a whitelist of users (Twitter handles/usernames) to not be unfollowed. This
 
 #### Stop after 1 minute
 
-The extension will stop running (unfollowing users) after 1minute from time started. **If unchecked, it will run until there's no one to unfollow & you'd have to manually "STOP" the process as you see fit** See [NOTE](#note) below
+The extension will pause running (unfollowing users) after 1 minute from time started. **It will then automatically reload the page and RESUME the process.** This is highly recommended to avoid account restrictions.
 
 #### Reload on finished
 
-Whether the extension should reload the current page after the running process is finished/done. By default, page will be refreshed. You can uncheck this to manually reload the page yourself.
+Whether the extension should reload the current page after the running process is stopped. By default, page will be refreshed.
 
 ## NOTE
 
