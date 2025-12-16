@@ -59,6 +59,9 @@ export const storage = {
   timerKey: 'twitter-mass-unfollow-timer',
   whiteListedUsersKey: 'twitter-mass-unfollow-whitelisted',
   reloadOnStoppedKey: 'twitter-mass-unfollow-reload-on-stopped',
+  taskStatusKey: 'twitter-mass-unfollow-task-status',
+  taskOptionsKey: 'twitter-mass-unfollow-task-options',
+  taskStatsKey: 'twitter-mass-unfollow-task-stats',
 };
 
 export const waitFor = async (duration = 1000) =>
